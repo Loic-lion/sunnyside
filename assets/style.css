@@ -1,0 +1,405 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 538px;
+  background-image: url(/assets/images/photos/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header_menu {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  width: 375px;
+}
+
+.logo {
+  padding-top: 32px;
+  padding-left: 24px;
+  width: 123.64px;
+  height: 24px;
+}
+
+.burger {
+  padding-top: 32px;
+  padding-right: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.header_arrow {
+  padding-top: 50px;
+}
+
+.image_egg {
+  height: 312px;
+  width: 375px;
+  background-image: url(/assets/images/photos/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 327px;
+  height: 309px;
+  background-color: white;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.image_glass_rose {
+  width: 375px;
+  height: 312px;
+  background-image: url(/assets/images/photos/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image_cerise {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 375px;
+  height: 600px;
+  background-image: url(/assets/images/photos/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 59px;
+}
+.image_cerise h3,
+.image_cerise p {
+  color: #24554a;
+  padding-top: 27px;
+}
+
+.image_orange {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 375px;
+  height: 600px;
+  background-image: url(/assets/images/photos/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 59px;
+}
+.image_orange h3,
+.image_orange p {
+  color: #052c3b;
+  padding-top: 27px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1108px;
+}
+
+.client_head {
+  width: 375px;
+  height: 20px;
+}
+
+.client_box {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images_box {
+  width: 375px;
+  height: 375px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images_box_1 {
+  width: 187.5px;
+  height: 187.5px;
+  background-image: url(/assets/images/photos/image-gallery-milkbottles.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.images_box_2 {
+  width: 187.5px;
+  height: 187.5px;
+  background-image: url(/assets/images/photos/image-gallery-orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.images_box_3 {
+  width: 187.5px;
+  height: 187.5px;
+  background-image: url(/assets/images/photos/image-gallery-cone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.images_box_4 {
+  width: 187.5px;
+  height: 187.5px;
+  background-image: url(/assets/images/photos/image-gallery-sugarcubes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 88px;
+  width: 327px;
+  height: 98px;
+  letter-spacing: 6.25px;
+  line-height: 49px;
+}
+
+h2 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.2285714298px;
+  color: #24303e;
+}
+
+h3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: -0.200000003px;
+}
+
+h4 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 4px;
+  color: #a7aaad;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.1285714358px;
+  color: #808397;
+  box-sizing: border-box;
+  width: 327px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bouton_learn {
+  align-self: center;
+  font-family: "Fraunces", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: rgba(254, 120, 102, 0.1450980392);
+}
+
+.client_photo_emily {
+  background-image: url(/assets/images/people/image-emily.jpg);
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.client_photo_thomas {
+  background-image: url(/assets/images/people/image-thomas.jpg);
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.client_photo_jennie {
+  background-image: url(/assets/images/people/image-jennie.jpg);
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
