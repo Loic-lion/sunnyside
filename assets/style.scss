@@ -126,17 +126,22 @@ table {
 $width: 375px;
 $height: 312px;
 $height2: 600px;
-$width_height_split: 187.5px;
+$width_height_split: 50%;
 $background-repeat: no-repeat;
 $background-position: center;
 $background-size: cover;
 $border-radius: 50%;
+
 body {
+  width: $width;
+}
+main {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  width: $width;
+  overflow: hidden;
 }
-
 header {
   display: flex;
   flex-direction: column;
@@ -165,8 +170,6 @@ header {
   padding-right: 24px;
   height: 24px;
   width: 24px;
-}
-nav {
 }
 .header_arrow {
   padding-top: 50px;
@@ -203,6 +206,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: $width;
   height: $height2;
   background-image: url(/assets/images/photos/image-graphic-design.jpg);
@@ -210,6 +214,7 @@ nav {
   background-position: $background-position;
   background-size: $background-size;
   padding-bottom: 59px;
+
   h3,
   p {
     color: #24554a;
@@ -227,6 +232,7 @@ nav {
   background-position: $background-position;
   background-size: $background-size;
   padding-bottom: 59px;
+  align-items: center;
   h3,
   p {
     color: #052c3b;
@@ -237,11 +243,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 1108px;
+  height: 1322px;
 }
 .client_head {
   width: $width;
   height: 20px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .client_box {
   width: $width;
@@ -250,6 +258,23 @@ nav {
   align-items: center;
 }
 .client_name {
+  padding-top: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: -0.12857143580913544px;
+  color: #24303e;
+}
+.client_job {
+  padding-top: 9px;
+  padding-bottom: 64px;
+  color: #a7aaad;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.10000000149011612px;
 }
 .images_box {
   width: $width;
@@ -342,10 +367,7 @@ p {
   line-height: 30px;
   letter-spacing: -0.12857143580913544px;
   color: #808397;
-  box-sizing: border-box;
   width: 327px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .bouton_learn {
   align-self: center;
@@ -359,30 +381,58 @@ p {
   text-decoration-thickness: 4px;
   text-decoration-color: #fe786625;
 }
-.client_photo_emily {
-  background-image: url(/assets/images/people/image-emily.jpg);
+.client_photo {
   width: 72px;
   height: 72px;
-  background-repeat: $background-repeat;
-  background-position: $background-position;
-  background-size: $background-size;
   border-radius: $border-radius;
 }
-.client_photo_thomas {
-  background-image: url(/assets/images/people/image-thomas.jpg);
-  width: 72px;
-  height: 72px;
-  background-repeat: $background-repeat;
-  background-position: $background-position;
-  background-size: $background-size;
-  border-radius: $border-radius;
+.client_avis {
+  padding-top: 32px;
 }
-.client_photo_jennie {
-  background-image: url(/assets/images/people/image-jennie.jpg);
-  width: 72px;
-  height: 72px;
-  background-repeat: $background-repeat;
-  background-position: $background-position;
-  background-size: $background-size;
-  border-radius: $border-radius;
+footer {
+  width: $width;
+  height: 350px;
+  background-color: #90d4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_footer {
+  display: flex;
+  width: $width;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.12857143580913544px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 57px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+}
+.icones_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+  padding-bottom: 80px;
+}
+.logo_footer {
+  padding-top: 64px;
+}
+a {
+  text-decoration: none;
+  color: #458d7e;
 }

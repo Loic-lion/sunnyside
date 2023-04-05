@@ -130,9 +130,15 @@ table {
 }
 
 body {
+  width: 375px;
+}
+
+main {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  width: 375px;
+  overflow: hidden;
 }
 
 header {
@@ -207,6 +213,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: 375px;
   height: 600px;
   background-image: url(/assets/images/photos/image-graphic-design.jpg);
@@ -232,6 +239,7 @@ header {
   background-position: center;
   background-size: cover;
   padding-bottom: 59px;
+  align-items: center;
 }
 .image_orange h3,
 .image_orange p {
@@ -243,12 +251,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 1108px;
+  height: 1322px;
 }
 
 .client_head {
   width: 375px;
   height: 20px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .client_box {
@@ -256,6 +266,27 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.client_name {
+  padding-top: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: -0.1285714358px;
+  color: #24303e;
+}
+
+.client_job {
+  padding-top: 9px;
+  padding-bottom: 64px;
+  color: #a7aaad;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1000000015px;
 }
 
 .images_box {
@@ -266,8 +297,8 @@ header {
 }
 
 .images_box_1 {
-  width: 187.5px;
-  height: 187.5px;
+  width: 50%;
+  height: 50%;
   background-image: url(/assets/images/photos/image-gallery-milkbottles.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -275,8 +306,8 @@ header {
 }
 
 .images_box_2 {
-  width: 187.5px;
-  height: 187.5px;
+  width: 50%;
+  height: 50%;
   background-image: url(/assets/images/photos/image-gallery-orange.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -284,8 +315,8 @@ header {
 }
 
 .images_box_3 {
-  width: 187.5px;
-  height: 187.5px;
+  width: 50%;
+  height: 50%;
   background-image: url(/assets/images/photos/image-gallery-cone.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -293,8 +324,8 @@ header {
 }
 
 .images_box_4 {
-  width: 187.5px;
-  height: 187.5px;
+  width: 50%;
+  height: 50%;
   background-image: url(/assets/images/photos/image-gallery-sugarcubes.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -355,10 +386,7 @@ p {
   line-height: 30px;
   letter-spacing: -0.1285714358px;
   color: #808397;
-  box-sizing: border-box;
   width: 327px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .bouton_learn {
@@ -374,32 +402,61 @@ p {
   text-decoration-color: rgba(254, 120, 102, 0.1450980392);
 }
 
-.client_photo_emily {
-  background-image: url(/assets/images/people/image-emily.jpg);
+.client_photo {
   width: 72px;
   height: 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border-radius: 50%;
 }
 
-.client_photo_thomas {
-  background-image: url(/assets/images/people/image-thomas.jpg);
-  width: 72px;
-  height: 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
+.client_avis {
+  padding-top: 32px;
 }
 
-.client_photo_jennie {
-  background-image: url(/assets/images/people/image-jennie.jpg);
-  width: 72px;
-  height: 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
+footer {
+  width: 375px;
+  height: 350px;
+  background-color: #90d4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_footer {
+  display: flex;
+  width: 375px;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1285714358px;
+}
+.menu_footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu_footer li {
+  margin-right: 57px;
+}
+.menu_footer li:last-child {
+  margin-right: 0;
+}
+
+.icones_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+  padding-bottom: 80px;
+}
+
+.logo_footer {
+  padding-top: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: #458d7e;
 }/*# sourceMappingURL=style.css.map */
