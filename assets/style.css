@@ -129,6 +129,10 @@ table {
   border-spacing: 0;
 }
 
+header, main, footer {
+  margin: auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
